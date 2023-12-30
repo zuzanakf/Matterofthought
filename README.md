@@ -1,1 +1,2 @@
 # Matterofthought
+## Data credits to Emo Soundscapes under creative commons - J. Fan, M. Thorogood, and P. Pasquier, “Emo-Soundscapes- A Dataset for Soundscape Emotion Recognition,” Proceedings of the International Conference on Affective Computing and Intelligent Interaction, 2017.
