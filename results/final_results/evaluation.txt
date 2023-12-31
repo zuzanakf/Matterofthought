@@ -1,0 +1,5 @@
+Process:
+MFCCs Flattening: The MFCCs are flattened to ensure that each instance in the dataset is a 1D array. This is necessary because linear regression in scikit-learn does not accept 3D arrays.
+
+Results:
+Plotting Limitations: The final plot although looks inofmrtaive, is chaoticdue to the high-dimensional MFCCs data.
