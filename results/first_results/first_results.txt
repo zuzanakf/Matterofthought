@@ -1,0 +1,6 @@
+Coefficients: 
+ [-0.00678149  0.0153355  -0.01774276 ... -0.00052769  0.00048468
+ -0.0004421 ]
+Mean squared error: 6.21
+Coefficient of determination: -19.90
+

@@ -1,0 +1,7 @@
+High Dimensionality: If audio data arrays are very large (indicated by the lengthy coefficients array), this means the model is dealing with very high-dimensional data. Linear regression may not be suitable for high-dimensional data without proper feature extraction or dimensionality reduction.
+
+Inappropriate Features: Directly using raw audio data in linear regression without feature extraction (like MFCCs, spectral features, etc.) can lead to poor model performance. The model may not capture the nuances of audio data effectively.
+
+Overfitting: A large number of features compared to the number of samples can lead to overfitting, where the model learns the noise in the training data instead of the underlying pattern.
+
+Plotting Issue: Plotting high-dimensional data in a 2D scatter plot (like using only the first feature) can be misleading and won't accurately represent the relationship between the predictors and the response variable.
