@@ -2,4 +2,9 @@ Process:
 MFCCs Flattening: The MFCCs are flattened to ensure that each instance in the dataset is a 1D array. This is necessary because linear regression in scikit-learn does not accept 3D arrays.
 
 Results:
-Plotting Limitations: The final plot although looks inofmrtaive, is chaoticdue to the high-dimensional MFCCs data.
+The arousal model seems to perform quite well, with a high R² value suggesting good model fit and a low MSE indicating accurate predictions.
+The valence model shows a moderate fit. While it still captures a significant portion of the variance in valence ratings, its predictive accuracy is lower than that of the arousal model.
+
+Improvements:
+Plotting Limitations: The final plot although looks informative, is chaotic due to the high-dimensional MFCCs data.
+With more computational power we could use MFCC Vectors with support vector regression, which is ussualy the standard for speach recognission through MFCC.

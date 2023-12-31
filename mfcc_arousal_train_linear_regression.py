@@ -15,7 +15,7 @@ resampled_directory = 'audio_data\\numpy_arrays_resampled'
 target_sr = 44100  #taget 
 
 
-# Iterate through each .npy file to find corresponding .wav files as not using some wavs due to large sr differences
+'''# Iterate through each .npy file to find corresponding .wav files as not using some wavs due to large sr differences
 for npy_file in os.listdir(numpy_directory):
     if npy_file.endswith('.npy'):
         wav_filename = npy_file.replace('.npy', '.wav')
@@ -38,7 +38,7 @@ for npy_file in os.listdir(numpy_directory):
 
 print("Resampling complete.")
 print(resampled_directory)
-
+'''
 def extract_mfccs(audio_array, sr=44100, n_mfcc=13):
     mfccs = librosa.feature.mfcc(y=audio_array, sr=sr, n_mfcc=n_mfcc)
     mfccs_mean = np.mean(mfccs, axis=1)
@@ -86,9 +86,18 @@ print("Coefficients: \n", regr.coef_)
 print("Mean squared error: %.2f" % mean_squared_error(y_test, y_pred))
 print("Coefficient of determination: %.2f" % r2_score(y_test, y_pred))
 
-# Since we can't easily plot high-dimensional data, consider alternative visualization or analysis methods
-# If you still want to plot, here is a simple scatter plot for the first feature
+
 plt.scatter(X_test[:, 0], y_test, color="black")
 plt.plot(X_test[:, 0], y_pred, color="blue", linewidth=3)
 
 plt.show()
+
+#saving model
+import pickle
+
+# Save the model
+model_filename = 'arousal_mfccs_model.pkl'
+with open(model_filename, 'wb') as file:
+    pickle.dump(regr, file)
+
+print(f"Model saved to {model_filename}")
