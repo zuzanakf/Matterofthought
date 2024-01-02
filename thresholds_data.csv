@@ -1,0 +1,9 @@
+Variable,Value
+threshold_valence_very_high_more_than,0.4539066895376002
+threshold_valence_high_more_than,0.274073220055281
+threshold_valence_low_less_than,-0.08559371890935749
+threshold_valence_very_low_less_than,-0.2654271883916767
+threshold_arousal_very_high_more_than,0.366098810938649
+threshold_arousal_high_more_than,0.21209339721306067
+threshold_arousal_low_less_than,-0.09591743023811597
+threshold_arousal_very_low_less_than,-0.2499228439637043
