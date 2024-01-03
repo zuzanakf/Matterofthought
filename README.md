@@ -19,7 +19,7 @@ The results of the NLP analysis is complied within **Research_results.csv**, it 
 
 The machine learning models are within **models**  
 
-The results of the machine leatning analysis are compiled in the **results/final_results** directory. Here, you will find:
+The results of the machine learning analysis are compiled in the **results/final_results** directory. Here, you will find:
 
 - 2D Plots: Visual representations of the models' predictions against actual data. These plots show the relationship between the feature extraction of the audio (MFCCs) and the emotional response ratings.
 - Statistics: Quantitative analysis of the model's performance, including metrics such as mean squared error and the coefficient of determination (R² score).
